@@ -25,7 +25,8 @@ Package.onTest(function(api) {
   api.use('http');
   api.use('random');
   api.use('tmeasday:html5-history-api');
-  api.use('communitypackages:inject-data@2.3.1');
+  api.use('communitypackages:fast-render');
+  api.use('communitypackages:inject-data');
 
 
   api.addFiles('test/common/fast_render_route.js', ['client', 'server']);
