@@ -57,7 +57,7 @@ function configure(api) {
   api.use('reactive-dict');
   api.use('reactive-var');
   api.use('ejson');
-  api.use('modules');
+  api.use('ecmascript');
 
   api.use('communitypackages:fast-render@4.0.6');
   api.use('communitypackages:inject-data@2.3.1');
