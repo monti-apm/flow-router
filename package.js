@@ -25,6 +25,8 @@ Package.onTest(function(api) {
   api.use('http');
   api.use('random');
   api.use('tmeasday:html5-history-api');
+  api.use('communitypackages:inject-data@2.3.1');
+
 
   api.addFiles('test/common/fast_render_route.js', ['client', 'server']);
 
@@ -59,8 +61,7 @@ function configure(api) {
   api.use('ejson');
   api.use('ecmascript');
 
-  api.use('communitypackages:fast-render@4.0.6');
-  api.use('communitypackages:inject-data@2.3.1');
+  api.use('communitypackages:fast-render@4.0.6', ['client', 'server'], {weak: true});
 
   api.addFiles('client/modules.js', 'client');
   api.addFiles('client/triggers.js', 'client');
