@@ -1,5 +1,5 @@
 name: Test
-on: [push, pull_request]
+on: push
 
 jobs:
   test:
@@ -8,7 +8,7 @@ jobs:
       matrix:
         meteorRelease:
           - '--release 1.3-rc.1'
-          - '--release 2.3'
+          - '--release 2.7.3'
           # Latest version
           - 
     steps:
