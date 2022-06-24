@@ -32,7 +32,7 @@ Package.onTest(function(api) {
   // api.addFiles('test/common/fast_render_route.js', ['client', 'server']);
 
   api.addFiles('test/client/_helpers.js', 'client');
-  // api.addFiles('test/server/_helpers.js', 'server');
+  api.addFiles('test/server/_helpers.js', 'server');
 
   api.addFiles('test/client/loader.spec.js', 'client');
   api.addFiles('test/client/route.reactivity.spec.js', 'client');
