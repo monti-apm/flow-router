@@ -38,7 +38,7 @@ It exposes a great API for changing the URL and reactively getting data from the
 Add FlowRouter to your app:
 
 ~~~shell
-meteor add kadira:flow-router
+meteor add montiapm:flow-router
 ~~~
 
 Let's write our first route (add this file to `lib/router.js`):
