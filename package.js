@@ -1,6 +1,6 @@
 Package.describe({
-  name: 'kadira:flow-router',
-  summary: 'Carefully Designed Client Side Router for Meteor',
+  name: 'montiapm:flow-router',
+  summary: 'Drop in replacement for flow router with support for Meteor 2.3+',
   version: '2.12.1',
   git: 'https://github.com/kadirahq/flow-router.git'
 });
@@ -24,11 +24,12 @@ Package.onTest(function(api) {
   api.use('mongo');
   api.use('http');
   api.use('random');
-  api.use('meteorhacks:fast-render');
-  api.use('meteorhacks:inject-data');
   api.use('tmeasday:html5-history-api');
+  // api.use('communitypackages:fast-render');
+  // api.use('communitypackages:inject-data');
 
-  api.addFiles('test/common/fast_render_route.js', ['client', 'server']);
+
+  // api.addFiles('test/common/fast_render_route.js', ['client', 'server']);
 
   api.addFiles('test/client/_helpers.js', 'client');
   api.addFiles('test/server/_helpers.js', 'server');
@@ -42,7 +43,7 @@ Package.onTest(function(api) {
   api.addFiles('test/client/trigger.spec.js', 'client');
   api.addFiles('test/client/triggers.js', 'client');
 
-  api.addFiles('test/server/plugins/fast_render.js', 'server');
+  // api.addFiles('test/server/plugins/fast_render.js', 'server');
 
   api.addFiles('test/common/router.path.spec.js', ['client', 'server']);
   api.addFiles('test/common/router.url.spec.js', ['client', 'server']);
@@ -52,16 +53,16 @@ Package.onTest(function(api) {
 });
 
 function configure(api) {
-  api.versionsFrom('METEOR@1.3-rc.1');
+  api.versionsFrom(['METEOR@1.3-rc.1', 'METEOR@2.3']);
 
   api.use('underscore');
   api.use('tracker');
   api.use('reactive-dict');
   api.use('reactive-var');
   api.use('ejson');
-  api.use('modules');
+  api.use('ecmascript');
 
-  api.use('meteorhacks:fast-render@2.14.0', ['client', 'server'], {weak: true});
+  api.use('communitypackages:fast-render@4.0.6', ['client', 'server'], {weak: true});
 
   api.addFiles('client/modules.js', 'client');
   api.addFiles('client/triggers.js', 'client');
