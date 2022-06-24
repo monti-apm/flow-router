@@ -3,6 +3,8 @@
 ## v2.12.2
 
 * Rename to montiapm:flow-router
+* Use `communitypackages:fast-render`
+* Add support for Meteor 2.3 and newer
 
 ### v2.12.1
 
