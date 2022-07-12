@@ -61,6 +61,7 @@ function configure(api) {
   api.use('reactive-var');
   api.use('ejson');
   api.use('ecmascript');
+  api.use('zodern:types@1.0.1');
 
   api.use('communitypackages:fast-render@4.0.6', ['client', 'server'], {weak: true});
 
