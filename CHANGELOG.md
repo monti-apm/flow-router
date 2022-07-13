@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.13.0
+
+* Add typescript types
+
 ## v2.12.2
 
 * Rename to montiapm:flow-router

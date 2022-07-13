@@ -1,7 +1,7 @@
 Package.describe({
   name: 'montiapm:flow-router',
   summary: 'Drop in replacement for flow router with support for Meteor 1.4 - 2.4+',
-  version: '2.13.0-beta.2',
+  version: '2.13.0',
   git: 'https://github.com/kadirahq/flow-router.git'
 });
 
