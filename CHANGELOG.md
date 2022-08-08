@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.13.1
+
+* Improves types for `setQueryParams`
+
 ## v2.13.0
 
 * Add typescript types
