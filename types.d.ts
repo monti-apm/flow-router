@@ -41,7 +41,7 @@ interface Router {
   reload: () => void;
   redirect: (path: string) => void;
   setQueryParams: (
-    newParams: { [key: string]: string | null | undefined }
+    newParams: { [key: string]: string | null | undefined | number }
   ) => boolean;
   current: () => {
     path: string;
